@@ -75,11 +75,6 @@ const About = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-in-left">
-              <img
-                src={Studio}
-                alt="MGConstruction Office"
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
             </div>
             <div className="animate-slide-in-right">
               <h2 className="text-4xl font-display font-bold text-black mb-6">
@@ -157,11 +152,11 @@ const About = () => {
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
               >
-                <img
-                  src={member.image || "/placeholder.svg"}
+                {/* <img
+                  src={member || "/placeholder.svg"}
                   alt={member.name}
                   className={member.className}
-                />
+                /> */}
                 <div className="p-6">
                   <h3 className="text-xl font-display font-semibold mb-2">
                     {member.name}
