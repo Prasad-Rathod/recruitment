@@ -1,6 +1,15 @@
 import { BookOpen, User } from "lucide-react";
 
-const ArticleCard = ({ category, title, excerpt, author, date, featured = false }) => {
+interface ArticleCardProps {
+  category: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  featured?: boolean;
+}
+
+const ArticleCard = ({ category, title, excerpt, author, date, featured = false }:ArticleCardProps) => {
   return (
     <article className={`bg-white border border-gray-200 hover:border-black transition-all duration-300 group ${featured ? 'lg:col-span-2' : ''}`}>
       <div className={`grid ${featured ? 'lg:grid-cols-2' : 'grid-cols-1'}`}>
