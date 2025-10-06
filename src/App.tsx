@@ -1,11 +1,21 @@
-import { BrowserRouter } from "react-router-dom";
-import MainRoute from "./routes/MainRoute";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Components/Layout';
+import MainRoute from './routes/MainRoute';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
-
-export default function App() {
+function App() {
   return (
-        <BrowserRouter>
-        <MainRoute></MainRoute>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<MainRoute />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;

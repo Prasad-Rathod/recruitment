@@ -15,19 +15,10 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-sm">Content</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="articles" className="hover:text-black">Articles</a></li>
-              <li><a href="authors" className="hover:text-black">Authors</a></li>
-              <li><a href="categories" className="hover:text-black">Categories</a></li>
-            </ul>
-          </div>
-          <div>
             <h4 className="font-semibold mb-4 text-sm">Company</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><a href="about" className="hover:text-black">About</a></li>
               <li><a href="contact" className="hover:text-black">Contact</a></li>
-              <li><a href="careers" className="hover:text-black">Careers</a></li>
             </ul>
           </div>
           <div>

@@ -1,5 +1,5 @@
-import { Briefcase, Calendar, ChevronRight, User } from "lucide-react";
-
+import { Calendar, ChevronRight, User } from "lucide-react";
+import Hiring from '../assets/Hiring.jpg'
 const Article = () => {
   return (
         <section className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -7,7 +7,7 @@ const Article = () => {
         <div className="bg-white border border-gray-200 overflow-hidden">
           <div className="grid lg:grid-cols-2">
             <div className="bg-gray-100 h-64 lg:h-auto flex items-center justify-center">
-              <Briefcase className="h-24 w-24 text-gray-300" />
+              <img src={Hiring} alt=""  />
             </div>
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
